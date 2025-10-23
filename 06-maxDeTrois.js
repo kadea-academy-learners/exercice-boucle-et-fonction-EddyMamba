@@ -12,8 +12,25 @@
 */
 function maxDeTrois(a, b, c) {
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
-}
+  if (arguments.length !== 3) return null;
 
+  // Verifier si les trois arguments sont des nombres
+  if (
+ typeof a !== 'number' || isNaN(a) ||
+ typeof b !== 'number' || isNaN(b) ||
+ typeof c !== 'number' || isNaN(c)
+) {
+  return null;
+
+}// Vérifie si les trois nombres sont égaux
+ if (a === b && b === c) {
+ return "Les trois nombres sont égaux";
+ }
+
+ //Retourner le plus grand de trois
+return Math.max(a, b, c);
+
+
+}
 // Ne pas modifier la ligne ci-dessous
 module.exports = { maxDeTrois };
