@@ -12,7 +12,11 @@
   */
   function compteARebours() {
     // Placeholder neutre : ne fait rien
+      for (let i = 10; i >= 1; i--) {
+    console.log(i);
   }
+}
+  
 
   // Ne pas modifier la ligne ci-dessous
   module.exports = { compteARebours }
