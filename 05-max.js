@@ -13,20 +13,19 @@
 function max(a, b) {
   // Exercice non implémenté : retourner le plus grand ou un message si égaux
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  
- if (typeof a !== 'number' || typeof b !== 'number' || isNaN(a) || isNaN(b)) {
-    return null;
-  }
+  if (typeof a !== 'number' || typeof b !== 'number' || isNaN(a) || isNaN(b)) {
+  return null;
+ }
 
-  // Vérifier si les nombres sont égaux
-  if (a === b) {
-    return "Les deux nombres sont égaux";
-  }
+ // Vérifier si les nombres sont égaux
+ if (a === b) {
+  return "Les deux nombres sont égaux";
+ }
 
-  // Retourner le plus grand des deux
-  
-  return a > b ? a : b;
-
+ // Retourner le plus grand des deux
+ // On peut utiliser une condition ternaire pour plus de concision
+ return a > b ? a : b;
 }
+
 // Ne pas modifier la ligne ci-dessous
 module.exports = { max }
